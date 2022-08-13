@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Share+Tech+Mono&display=swap");
+:root {
+  --ff1: "Share Tech Mono", monospace;
+  --ff2: "Monoton", cursive;
+  --w: min(750px, 90%);
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+::marker {
+  color: white;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: limegreen;
+  font-family: var(--ff1);
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+
+a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+nav {
+  width: var(--w);
+  margin: 0 auto;
+  border-bottom: 1px solid white;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem 0.5rem 0rem;
+  margin-bottom: 1rem;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 1rem;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+nav ul li + li {
+  margin-left: 1rem;
+}
+
+.logo {
+  width: 75px;
+  height: 75px;
+}
+
+.dash {
+  color: #eee;
+  text-align: center;
+}
+
+main {
+  width: var(--w);
+  margin: 0 auto;
+  border-left: 2px dashed #fff;
+  border-right: 2px dashed #fff;
+  padding: 0rem 1rem;
+}
+
+.dir, .subdir {
+  color: #e1e1e1;
+}
+
+.heading, .subheading {
+  color: lightgreen;
+}
+
+table {
+  border: 1px solid white;
+  border-spacing: 20px;
+}
+table th {
+  text-align: left;
+  color: #e1e1e1;
+}
+
+/*# sourceMappingURL=style.css.map */
